@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Exercise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Flex exercise</h2>
+  </header>
+  <div class="container container-1">
+    <div class="box-1-of-container-1">
+      <h3>Box One (1 of 1)</h3>
+      <p>If you’ve ever collaborated with your design team to create a landing page, an email template,  looked </p>
+    </div>
+    <div class="box-2-of-container-1">
+      <h3>Box Two (2 of 1)</h3>  
+      <p>If you’ve ever collaborated with your design team to create a landing page, an email template, print advertisement, etc., they probably sent over a mock-up layout that shows the general aesthetic that the collateral will have. If you looked </p>
+    </div>
+    <div class="box-3-of-container-1">
+      <h3>Box Three (3 of 1)</h3>  
+      <p>If you’ve ever collaborated with your design team to create a landing page, an email template, print advertisement, etc., they probably sent over a mock-up layout that shows the general aesthetic that the collateral will have. If you looked </p>
+    </div>
+  </div>
+  <hr>
+  
+  <div class="container container-2">
+    <div class="box-1-of-container-2">
+      <h3>Box One (1 of 2)</h3>
+      <p>If you’ve ever collaborated with your design team to create a landing page, an email template, print advertisement, etc., they probably sent over a mock-up layout that shows the general aesthetic that the collateral will have. If you looked </p>
+    </div>
+    <div class="all box-2-of-container-2">
+      <h3>Box Two (2 of 2)</h3>  
+      <p>If you’ve ever collaborated with your design team to create a landing page, an email template, print advertisement, etc., they probably sent over a mock-up layout that shows the general aesthetic that the collateral will have. If you looked </p>
+    </div>
+    <div class="box-3-of-container-2">
+      <h3>Box Three (3 of 2)</h3>  
+      <p>If you’ve ever collaborated with your design team to create a landing page, an email template, print advertisement, etc., they probably sent over a mock-up layout that shows the general aesthetic that the collateral will have. If you looked </p>
+    </div>
+  </div>
+  <hr>
+  <div class="container container-3">
+    <div class="box-1-of-container-3">
+      <h3>Box One (1 of 3)</h3>  
+    </div>
+    <div class="box-2-of-container-3">
+      <h3>Box Two (2 of 3)</h3>  
+    </div>
+    <div class="box-3-of-container-3">
+      <h3>Box Three (3 of 3)</h3>  
+    </div>
+    <div class="box-4-of-container-3">
+      <h3>Box Four (4 of 3)</h3>  
+    </div>
+    <div class="box-5-of-container-3">
+      <h3>Box Five (5 of 3)</h3>  
+    </div>
+  </div>
+</div>
+<hr>
+<h4>container-4 demonstrates flex values responsive to media-query screen-size</h4>
+<p>@media all and (min-width: 800px) {
+    .container-4 {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      flex-flow: wrap row-reverse;
+    }
+  }</p>
+  <p>Check by changing the screen size to understand how it works</p>
+
+  <div class="container container-4">
+    <div class="box-1-of-container-4">
+      <h3>Box One (1 of 4)</h3>  
+    </div>
+    <div class="box-2-of-container-4">
+      <h3>Box Two (2 of 4)</h3>  
+    </div>
+    <div class="box-3-of-container-4">
+      <h3>Box Three (3 of 4)</h3>  
+    </div>
+    <div class="box-4-of-container-4">
+      <h3>Box Four (4 of 4)</h3>  
+    </div>
+    <div class="box-5-of-container-4">
+      <h3>Box Five (5 of 4)</h3>  
+    </div>
+    <div class="box-6-of-container-4">
+      <h3>Box Six (6 of 4)</h3>  
+    </div>
+    <div class="box-7-of-container-4">
+      <h3>Box Seven (7 of 4)</h3>  
+    </div>
+  </div>
+<hr>
+container-5 demonstrates flex values responsive to media-query screen-size</h4>
+<p>/* Small screens */<br>
+    @media all and (max-width: 799px) {<br>
+      .container-5 {<br>
+        /* On small screens, we are no longer using row direction but column */<br>
+        flex-flow: wrap;<br>
+        /*align-items: baseline;*/<br>
+  }</p>
+<p>@media all and (max-width: 499px) {
+        .container-5 {
+          /* On small screens, we are no longer using row direction but column */
+          flex-direction: column;
+          /*align-items: baseline;*/
+        }
+      }
+      
+    }</p>
+    <p>Check by changing the screen size to understand how it works</p>
+
+  <div class="container container-5">
+    <div class="box-1-of-container-5">
+      <h3>Box One (1 of 5)</h3>  
+    </div>
+      <div class="box-2-of-container-5">
+        <h3>Box Two (2 of 5)</h3>  
+      </div>
+      <div class="box-3-of-container-5">
+        <h3>Box Three (3 of 5)</h3>  
+      </div>
+      <div class="box-4-of-container-5">
+        <h3>Box Four (4 of 5)</h3>  
+      </div>
+      <div class="box-5-of-container-5">
+        <h3>Box Five (5 of 5)</h3>  
+      </div>
+      <div class="box-6-of-container-5">
+        <h3>Box Six (6 of 5)</h3>  
+      </div>
+      <div class="box-7-of-container-5">
+        <h3>Box Seven (7 of 5)</h3>  
+      </div>
+    </div>
+</body>
+</html>

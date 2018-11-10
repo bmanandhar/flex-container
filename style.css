@@ -1,0 +1,235 @@
+html {
+  background-color: #efeff3;
+}
+
+body {
+  padding: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex; 
+  /* 
+  flex-direction: :column-reverse; row by default  
+  align-items: flex-start; 
+  align-items: flex-end;
+  column-direction: column | column-reverse | row-reverse;
+  align-items: stretch; by default*/
+}
+
+div {
+  margin: 2px;
+  padding: 0 2px;
+}
+/****Container-1****/
+.container-1 {
+  background-color: lightseagreen;
+  border: 2px black solid;
+  padding: 1px;
+  margin: 2px;
+}
+
+.box-1-of-container-1 {
+  margin: 2px;
+  border: 2px green solid;
+}
+
+.box-2-of-container-1 {
+  margin: 2px;
+  border: 2px orange solid;
+}
+
+.box-3-of-container-1 {
+  margin: 2px;
+  border: 2px red solid;
+}
+/****Container-2****/
+.container-2 {
+  /*space-between; space-around | center | flex-end | flex-start (by default)*/
+  background-color: lightskyblue;
+  border: 2px purple solid;
+  padding: 1px;
+  margin: 2px;
+}
+
+.box-1-of-container-2 {
+  margin: 2px;
+  border: 2px green solid;
+}
+
+.box-2-of-container-2 {
+  margin: 2px;
+  border: 2px orange solid;
+}
+
+.box-3-of-container-2 {
+  margin: 2px;
+  border: 2px red solid;
+}
+/****Container-3****/
+.container-3 {
+  justify-content: space-between;/*flex-end; space-evenly; space-around; space-between; flex-start(defualt value);*/
+  background-color: blue;
+  border: 2px khaki solid;
+  padding: 1px;
+  margin: 2px;
+}
+
+.box-1-of-container-3, .box-2-of-container-3, 
+.box-3-of-container-3, .box-4-of-container-3,
+ .box-5-of-container-3 {
+  height: 300px;
+  width: 300px;
+  margin: 2px;
+  border: 2px turquoise solid;
+}
+
+.box-1-of-container-3 {
+  background-color: lightpink;
+
+  }
+
+.box-2-of-container-3 {
+  background-color: lightcoral;
+}
+
+.box-3-of-container-3 {
+  background-color: lightgoldenrodyellow;
+}
+
+.box-4-of-container-3 {
+  background-color: lightsteelblue;
+}
+
+.box-5-of-container-3 {
+  background-color: lightslategray;
+}
+/****Container-4****/
+.container-4 {
+  justify-content: ;/*space-between; flex-end; space-evenly; space-around; space-between; flex-start(defualt value);*/
+  align-items: baseline;
+  background-color: yellow;
+  border: 2px black;
+  padding: 1px;
+  margin: 2px;
+}
+
+.box-1-of-container-4, .box-2-of-container-4, 
+.box-3-of-container-4, .box-4-of-container-4,
+.box-5-of-container-4, .box-6-of-container-4,
+.box-7-of-container-4,  {
+  margin: 2px;
+  border: 2px magenta solid;
+}
+
+.box-1-of-container-4 {
+  height: 250px;
+  width: 175px;
+  background-color: seagreen;
+}
+
+.box-2-of-container-4 {
+  height: 220px;
+  width: 175px;
+  background-color: lightcoral;
+}
+
+.box-3-of-container-4 {
+  height: 275px;
+  width: 175px;
+  background-color: darkgoldenrod;
+}
+
+.box-4-of-container-4 {
+  height: 225px;
+  width: 175px;
+  background-color: lightcoral;
+}
+
+.box-5-of-container-4 {
+  height: 200px;
+  width: 175px;
+  background-color: rebeccapurple;
+}
+
+.box-6-of-container-4 {
+  height: 250px;
+  width: 175px;
+  background-color: mediumslateblue;
+}
+
+.box-7-of-container-4 {
+  height: 200px;
+  width: 175px;
+  background-color: palegreen;
+}
+
+.box-1-of-container-5 {
+  height: 250px;
+  width: 175px;
+  background-color: seagreen;
+}
+
+.box-2-of-container-5 {
+  height: 220px;
+  width: 175px;
+  background-color: lightcoral;
+}
+
+.box-3-of-container-5 {
+  height: 275px;
+  width: 175px;
+  background-color: darkgoldenrod;
+}
+
+.box-4-of-container-5 {
+  height: 225px;
+  width: 175px;
+  background-color: lightcoral;
+}
+
+.box-5-of-container-5 {
+  height: 200px;
+  width: 175px;
+  background-color: rebeccapurple;
+}
+
+.box-6-of-container-5 {
+  height: 250px;
+  width: 175px;
+  background-color: mediumslateblue;
+}
+
+.box-7-of-container-5 {
+  height: 200px;
+  width: 175px;
+  background-color: palegreen;
+}
+
+/* Medium screens */
+@media all and (min-width: 500px) {
+  .container-4 {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    flex-flow: wrap row-reverse;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 799px) {
+  .container-5 {
+    /* On small screens, we are no longer using row direction but column */
+    flex-flow: wrap;
+    /*align-items: baseline;*/
+  }
+}
+
+@media all and (max-width: 499px) {
+  .container-5 {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    /*align-items: baseline;*/
+  }
+}
